@@ -16,8 +16,6 @@ function App() {
   return (
     <Grid> 
       <Dashboard />
-      {/* <MenuBar /> */}
-      {/* <Outlet /> */}
     </Grid>
 
 );
