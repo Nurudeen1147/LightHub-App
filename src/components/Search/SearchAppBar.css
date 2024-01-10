@@ -1,0 +1,9 @@
+/* SearchAppBar.css */
+.toolbar {
+    height: 0px; /* Set the desired height */
+    margin-top: -88px;
+  }
+  .appbar {
+    height: 5px;
+    margin-top: -2px;
+  }
