@@ -12,7 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Link from '@mui/material/Link';
+import { Link } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import Studentlogin from './Studentlogin';
 import ProfileUpdate from '../../Pages/Profile/Profile';
@@ -65,7 +65,6 @@ export default function Studentsignup() {
       email: data.get('email'),
     });
   };
-
 
   return (
     <section>
@@ -150,14 +149,9 @@ export default function Studentsignup() {
             </Button>
             <Grid container justifyContent="flex-end" mt='px'>
               <Grid item>
-                <div>
-                  <Link href="./components/LoginPage/Studentlogin" variant="body2">
-                    {"Already have an account? Sign-in"}
-                  </Link>
-                  <Routes>
-                    <Route path="/student-login" component={Studentlogin} />
-                  </Routes>
-                </div>
+              <Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <i>Already have an account? Sign-in</i>
+              </Link>
               </Grid>
             </Grid>
           </Box>

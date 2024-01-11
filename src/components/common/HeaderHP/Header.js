@@ -8,7 +8,7 @@ import CommonButton from '../commonbutton/CommonButton';
 import './HeaderAppBar.css'
 import Grid from '@mui/material/Grid';
 import logo from './LightHubLogo1.png';
-import { autocompleteClasses } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const buttonStyles1 = {
@@ -48,17 +48,6 @@ const Header = () => {
             <b><i>LightHub</i></b>
 
             </Typography>
-            {/* <div>
-            <CommonButton
-            size='small'
-            variant='contained'
-            sx={buttonStyles1}
-            >
-              
-                <i>Signup/Login</i>
-              
-            </CommonButton>
-            </div> */}
           
         </Toolbar>
         </div>
@@ -69,8 +58,9 @@ const Header = () => {
             variant='contained'
             sx={buttonStyles1}
             >
-              
+              <Link to="/signup" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <i>Signup/Login</i>
+              </Link>
               
             </CommonButton>
             </div>

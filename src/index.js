@@ -10,10 +10,7 @@ import CourseQuiz from './Pages/Course-Quiz/CourseQuiz';
 import CourseProgress from './Pages/Course-Progress/CourseProgress';
 import CourseCalendar from './Pages/Course-Calendar/CourseCalendar';
 import Chatroom from './Pages/Chatroom/Chatroom';
-// import Annoucements from './Pages/Announcements/Announcements';
-// import Profile from './Pages/Profile/Profile';
 import AddaCourse from './Pages/Add-a-Course/AddaCourse';
-// import ReactDOM from 'react-dom/client';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import {

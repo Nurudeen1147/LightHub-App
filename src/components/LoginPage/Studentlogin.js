@@ -5,7 +5,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
@@ -13,7 +12,9 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Forgetpassword from './forgetpassword';
+import { Link } from 'react-router-dom';
 import './AllLogin.css'
+
 
 function Copyright(props) {
     return (
@@ -102,16 +103,14 @@ export default function Studentlogin() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="./components/LoginPage/Studentsignup" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
+              <Link to="/signup" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <i>Don't have an account? Sign Up</i>
+              </Link>
               </Grid>
               <Grid sx={{ml: 15, mt: 1}} >
-                <Link href="#" variant="body2" >
-                    <div>
-                  <b><i>Admin/Instructor login</i></b>
-                  </div>
-                </Link>
+              <Link to="/slogin" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <b><i>Admin/Instructor login</i></b>
+              </Link>
               </Grid>
             </Grid>
           </Box>
