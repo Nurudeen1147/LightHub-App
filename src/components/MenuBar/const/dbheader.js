@@ -14,6 +14,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import ProfileUpdate from '../../../Pages/Profile/Profile';
 import Notification from '../../../Pages/Annoucements/Annoucements';
+import HelpDialog from '../../../Pages/FAQ/FAQ';
 
 const lightColor = 'rgba(255, 255, 255, 0.7)';
 
@@ -34,9 +35,9 @@ function DBheader(props) {
           <Grid container spacing={0} alignItems="center" mr={1}>
             <Grid item xs />
             <Grid item>
-              <Tooltip title="Help">
+              <Tooltip title="Help/FAQ">
                 <IconButton color="inherit">
-                  <HelpIcon />
+                <HelpDialog />
                 </IconButton>
               </Tooltip>
             </Grid>
