@@ -48,7 +48,7 @@ export default function Dashboard() {
         <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
           <DBheader onDrawerToggle={handleDrawerToggle} />
           <Box component="main" sx={{ flex: 1, py: 6, px: 4, bgcolor: '#eaeff1' }}>
-            <Outlet /> {/* Render the corresponding component based on the route */}
+            <Outlet />
           </Box>
           <Box component="footer" sx={{ p: 2, bgcolor: '#242d2e' }}>
             <Footers />
