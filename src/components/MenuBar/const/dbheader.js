@@ -41,23 +41,7 @@ function DBheader(props) {
                 </IconButton>
               </Tooltip>
             </Grid>
-            {/* <Grid item>
-              <Link
-                href="/"
-                variant="body2"
-                sx={{
-                  textDecoration: 'none',
-                  color: lightColor,
-                  '&:hover': {
-                    color: 'common.white',
-                  },
-                }}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i>Logout</i>
-              </Link>
-            </Grid> */}
+
             <Grid item>
               <Tooltip title="Notifications">
                 {/* <IconButton color="inherit">
@@ -92,15 +76,6 @@ function DBheader(props) {
             </Grid>
           </Grid>
         </Toolbar>
-
-      {/* <AppBar component="div" position="static" elevation={0} sx={{ zIndex: 0 }}>
-        <Tabs value={0} textColor="inherit">
-          <Tab label="Users" />
-          <Tab label="Sign-in method" />
-          <Tab label="Templates" />
-          <Tab label="Usage" />
-        </Tabs>
-      </AppBar> */}
 
         <Toolbar>
           <Grid container spacing={1} alignItems="center" mt={-3}>

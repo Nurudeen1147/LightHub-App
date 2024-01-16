@@ -72,32 +72,12 @@ export const menubaritemlists = [
         route: 'chatroom',
     },
 
-    // {
-    //     id: 8,
-    //     icon: <AnnouncementIcon />,
-    //     label: 'Announcements',
-    //     route: 'announcements',
-    // },
-
-    // {
-    //     id: 10,
-    //     icon: <AccountBoxIcon />,
-    //     label: 'Profile',
-    //     route: 'profile',
-    // },
-
     {
         id: 8,
         icon: <PostAddIcon />,
         label: 'Add a Course',
         route: 'add-a-course',
     },
-    // {
-    //     id: 9,
-    //     icon: <HomeIcon />,
-    //     label: 'Menu',
-    //     route: 'menu',
-    // }
 ]
 
 // export const children = menubaritemlists[0].children;
